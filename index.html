@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Catering</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+</head>
+
+<body>
+
+<div id="container">
+
+<h1>Catering - dania na zamówienie</h1>
+
+<fieldset>
+<legend>Dane zamówienia</legend>
+
+<select>
+    <option>Margharitta</option>
+</select>
+
+<fieldset>
+<legend>Dodatki</legend>
+
+<input type="radio" name="d" onclick="pokazDodatek()" checked> z dodatkiem
+<input type="radio" name="d" onclick="ukryjDodatek()"> brak <br>
+
+<input type="text" id="dodatek" onkeyup="dodatek()">
+<input type="checkbox" id="cdodatek" disabled>
+
+</fieldset>
+
+Ulica <input type="text" id="ulica" onkeyup="ulica()">
+<input type="checkbox" id="culica" disabled><br>
+
+Nr <input type="text" id="numer" onkeyup="numer()">
+<input type="checkbox" id="cnumer" disabled><br>
+
+Telefon <input type="text" id="telefon" onkeyup="telefon()">
+<input type="checkbox" id="ctelefon" disabled><br>
+
+Waga <input type="text" id="waga" onkeyup="waga()">
+<input type="checkbox" id="cwaga" disabled><br>
+
+<button id="send" onclick="zamow()" disabled>Wyślij</button>
+
+</fieldset>
+
+<h3>Status zamówienia</h3>
+<textarea id="status"></textarea>
+
+</div>
+
+</body>
+</html>
